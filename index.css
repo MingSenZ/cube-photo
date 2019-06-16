@@ -1,0 +1,107 @@
+.wraper{
+    transform-style: preserve-3d;
+    perspective: 5000px;
+    width: 250px;
+    height: 250px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+}
+.bigWrap{
+    height:250px;
+    width: 250px;
+    transform: translateZ(-20px) rotateY(30deg) rotateX(30deg);
+    transform-style: preserve-3d;
+    perspective: 5000px;
+}
+.bigBox{
+    height:250px;
+    width: 250px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.6;
+    /*opacity: 0;*/
+}
+.B-behind{
+    background-color: blue;
+    transform-origin: top;
+    transform: rotateX(90deg);
+}
+.B-front{
+    background-color: yellow;
+    transform-origin: bottom;
+    transform: rotateX(-90deg);
+}
+.B-down{
+    background-color: pink;
+}
+.B-up{
+    background-color: greenyellow;
+    transform: translateZ(250px);
+}
+.B-left{
+    background-color: brown;
+    transform-origin:left center ;
+    transform: rotateY(-90deg);
+}
+.B-right{
+    background-color: darkorchid;
+    transform-origin: right;
+    transform: rotateY(90deg);
+}
+.smallWrap{
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    transform: translateZ(150px) rotateY(30deg) rotateX(30deg) ;
+    transform-style: preserve-3d;
+    perspective: 5000px;
+}
+
+.smallBox{
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+}
+.S-behind{
+    background-color: rgba(222,111,130,1);
+    transform-origin: top;
+    transform: rotateX(90deg);
+}
+.S-front{
+    background-color: rgba(180,121,210,1);
+    transform-origin: bottom;
+    transform: rotateX(-90deg);
+}
+.S-left{
+    background-color: rgba(20,130,180,1);
+    transform-origin: left;
+    transform: rotateY(-90deg);
+}
+.S-right{
+    background-color: rgba(80,221,130,1);
+    transform-origin: right;
+    transform: rotateY(90deg);
+}
+.S-up{
+    background-color: rgba(100,120,100,1);
+    transform: translateZ(50px);
+}
+.S-down{
+    background-color: rgba(255,255,0,1);
+}
+
